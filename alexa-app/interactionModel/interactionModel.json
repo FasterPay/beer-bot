@@ -1,0 +1,80 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "beerbot",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "OrderIntent",
+                    "slots": [
+                        {
+                            "name": "beer",
+                            "type": "beer"
+                        }
+                    ],
+                    "samples": [
+                        "i would have a {beer}",
+                        "please order a {beer}",
+                        "order a {beer}",
+                        "order me a {beer}"
+                    ]
+                },
+                {
+                    "name": "OrderStatusIntent",
+                    "slots": [],
+                    "samples": [
+                        "where is my order",
+                        "what is the status of my order",
+                        "where is my beer"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "beer",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Budweiser"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tuborg"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Corona"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kingfisher"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
