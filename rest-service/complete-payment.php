@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 include('fasterpay-php/lib/autoload.php');
 
@@ -16,8 +16,8 @@ while(! feof($jsonFile)) {
 }
 
 $gateway = new FasterPay\Gateway(array(
-	'publicKey' 	=> '1761bba0a7e8b6a2aba3c0228b87f801',
-	'privateKey'	=> '705ee0e0a37bd292e63174ecde320550',
+	'publicKey' 	=> '<your-public-key>',
+	'privateKey'	=> '<your-private-key>',
 	'apiBaseUrl'	=> "https://pay.fasterpay.com/payment/form"
 ));
 
@@ -32,4 +32,3 @@ $form = $gateway->paymentForm()->buildForm(
 );
 
 echo $form;
-
